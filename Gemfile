@@ -25,7 +25,7 @@ gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.7'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
@@ -50,6 +50,7 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'rubocop', '~> 0.67.2', require: false
   gem 'rubocop-performance'
+  gem 'erb_lint', require: false
 end
 
 group :test do
@@ -65,4 +66,5 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'activemodel-serializers-xml'
 gem 'webpacker', '~> 3.0'
